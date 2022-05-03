@@ -9,22 +9,20 @@
 /* Begin PBXBuildFile section */
 		571CE6852821C2DA00C2E24F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571CE6842821C2DA00C2E24F /* AppDelegate.swift */; };
 		571CE6872821C2DA00C2E24F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571CE6862821C2DA00C2E24F /* ViewController.swift */; };
-		571CE6892821C2DA00C2E24F /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 571CE6882821C2DA00C2E24F /* Experience.rcproject */; };
 		571CE68C2821C2DA00C2E24F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571CE68A2821C2DA00C2E24F /* Main.storyboard */; };
 		571CE68E2821C2DA00C2E24F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571CE68D2821C2DA00C2E24F /* Assets.xcassets */; };
 		571CE6912821C2DB00C2E24F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571CE68F2821C2DB00C2E24F /* LaunchScreen.storyboard */; };
-		571CE6982821C4BA00C2E24F /* TinyToyTank.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 571CE6972821C4BA00C2E24F /* TinyToyTank.rcproject */; };
+		57C6818D2821D1F70049AAD0 /* TinyToyTank.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 57C6818C2821D1F70049AAD0 /* TinyToyTank.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		571CE6812821C2DA00C2E24F /* TankyBoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TankyBoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		571CE6842821C2DA00C2E24F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		571CE6862821C2DA00C2E24F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		571CE6882821C2DA00C2E24F /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		571CE68B2821C2DA00C2E24F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		571CE68D2821C2DA00C2E24F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		571CE6902821C2DB00C2E24F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		571CE6972821C4BA00C2E24F /* TinyToyTank.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = TinyToyTank.rcproject; sourceTree = "<group>"; };
+		57C6818C2821D1F70049AAD0 /* TinyToyTank.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = TinyToyTank.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +55,10 @@
 		571CE6832821C2DA00C2E24F /* TankyBoy */ = {
 			isa = PBXGroup;
 			children = (
-				571CE6972821C4BA00C2E24F /* TinyToyTank.rcproject */,
 				571CE6842821C2DA00C2E24F /* AppDelegate.swift */,
 				571CE6862821C2DA00C2E24F /* ViewController.swift */,
-				571CE6882821C2DA00C2E24F /* Experience.rcproject */,
 				571CE68A2821C2DA00C2E24F /* Main.storyboard */,
+				57C6818C2821D1F70049AAD0 /* TinyToyTank.rcproject */,
 				571CE68D2821C2DA00C2E24F /* Assets.xcassets */,
 				571CE68F2821C2DB00C2E24F /* LaunchScreen.storyboard */,
 			);
@@ -140,9 +137,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				571CE6872821C2DA00C2E24F /* ViewController.swift in Sources */,
-				571CE6982821C4BA00C2E24F /* TinyToyTank.rcproject in Sources */,
 				571CE6852821C2DA00C2E24F /* AppDelegate.swift in Sources */,
-				571CE6892821C2DA00C2E24F /* Experience.rcproject in Sources */,
+				57C6818D2821D1F70049AAD0 /* TinyToyTank.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

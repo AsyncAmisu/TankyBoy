@@ -3,6 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -10,17 +12,122 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="TankyBoy" customModuleProvider="target" sceneMemberID="viewController">
-                    <arView key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="yym-Ei-MZv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </arView>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F2K-f0-oSZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </arView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7G-Qf-axL">
+                                <rect key="frame" x="314" y="746" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="6v9-1n-09G"/>
+                                    <constraint firstAttribute="height" constant="80" id="Icu-qk-Wso"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="TankRight"/>
+                                <connections>
+                                    <action selector="tankRightPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aUR-Nb-tf4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="327-il-bv1">
+                                <rect key="frame" x="314" y="646" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="nIi-Dk-9Q1"/>
+                                    <constraint firstAttribute="height" constant="80" id="qve-35-Usl"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="TurretRight"/>
+                                <connections>
+                                    <action selector="turretRightPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DMP-TS-4ZW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRH-xp-2l1">
+                                <rect key="frame" x="214" y="746" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="MGp-0e-kh2"/>
+                                    <constraint firstAttribute="width" constant="80" id="qgF-E7-KLp"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="TankForward"/>
+                                <connections>
+                                    <action selector="tankForwardPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rzz-kR-Rum"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0s-45-pYM">
+                                <rect key="frame" x="114" y="746" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="6GM-aI-7iH"/>
+                                    <constraint firstAttribute="height" constant="80" id="UPE-R6-M6k"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="TankLeft"/>
+                                <connections>
+                                    <action selector="tankLeftPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hDu-Ne-4sL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lo-4K-ohu">
+                                <rect key="frame" x="214" y="646" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="nzy-y9-fUF"/>
+                                    <constraint firstAttribute="width" constant="80" id="tO4-T0-Ibi"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="CannonFire"/>
+                                <connections>
+                                    <action selector="cannonFirePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pX9-rC-we3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXq-Tp-Ly1">
+                                <rect key="frame" x="114" y="646" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="LCP-nn-ja9"/>
+                                    <constraint firstAttribute="width" constant="80" id="lAp-Nv-KE6"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="TurretLeft"/>
+                                <connections>
+                                    <action selector="turretLeftPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PP8-yU-tln"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1rL-9W-7aE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SRH-xp-2l1" firstAttribute="centerY" secondItem="C7G-Qf-axL" secondAttribute="centerY" id="2kw-JZ-QF6"/>
+                            <constraint firstItem="JXq-Tp-Ly1" firstAttribute="centerY" secondItem="3lo-4K-ohu" secondAttribute="centerY" id="4yp-gU-sdz"/>
+                            <constraint firstItem="r0s-45-pYM" firstAttribute="centerY" secondItem="SRH-xp-2l1" secondAttribute="centerY" id="6A1-3p-Q2s"/>
+                            <constraint firstItem="C7G-Qf-axL" firstAttribute="leading" secondItem="SRH-xp-2l1" secondAttribute="trailing" constant="20" id="73Y-TB-rdO"/>
+                            <constraint firstAttribute="trailing" secondItem="327-il-bv1" secondAttribute="trailing" constant="20" id="8is-pc-z68"/>
+                            <constraint firstItem="327-il-bv1" firstAttribute="leading" secondItem="3lo-4K-ohu" secondAttribute="trailing" constant="20" id="CuF-V1-hl4"/>
+                            <constraint firstItem="C7G-Qf-axL" firstAttribute="top" secondItem="327-il-bv1" secondAttribute="bottom" constant="20" id="Hnh-Bs-FUG"/>
+                            <constraint firstItem="3lo-4K-ohu" firstAttribute="leading" secondItem="JXq-Tp-Ly1" secondAttribute="trailing" constant="20" id="JDb-rV-8Av"/>
+                            <constraint firstItem="SRH-xp-2l1" firstAttribute="leading" secondItem="r0s-45-pYM" secondAttribute="trailing" constant="20" id="aKp-yy-NLq"/>
+                            <constraint firstItem="C7G-Qf-axL" firstAttribute="bottom" secondItem="1rL-9W-7aE" secondAttribute="bottom" constant="-36" id="iot-R1-o1e"/>
+                            <constraint firstItem="3lo-4K-ohu" firstAttribute="centerY" secondItem="327-il-bv1" secondAttribute="centerY" id="kgf-RE-3Dr"/>
+                            <constraint firstItem="1rL-9W-7aE" firstAttribute="trailing" secondItem="C7G-Qf-axL" secondAttribute="trailing" constant="20" id="oYz-pS-pHH"/>
+                        </constraints>
+                    </view>
                     <connections>
-                        <outlet property="arView" destination="8bC-Xf-vdC" id="TPV-4x-avp"/>
+                        <outlet property="arView" destination="F2K-f0-oSZ" id="EyV-rc-F0M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="134"/>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CannonFire" width="256" height="256"/>
+        <image name="TankForward" width="256" height="256"/>
+        <image name="TankLeft" width="256" height="256"/>
+        <image name="TankRight" width="256" height="256"/>
+        <image name="TurretLeft" width="256" height="256"/>
+        <image name="TurretRight" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
