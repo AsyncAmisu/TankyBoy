@@ -13,6 +13,7 @@
 		571CE68C2821C2DA00C2E24F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571CE68A2821C2DA00C2E24F /* Main.storyboard */; };
 		571CE68E2821C2DA00C2E24F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571CE68D2821C2DA00C2E24F /* Assets.xcassets */; };
 		571CE6912821C2DB00C2E24F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571CE68F2821C2DB00C2E24F /* LaunchScreen.storyboard */; };
+		571CE6982821C4BA00C2E24F /* TinyToyTank.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 571CE6972821C4BA00C2E24F /* TinyToyTank.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		571CE68B2821C2DA00C2E24F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		571CE68D2821C2DA00C2E24F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		571CE6902821C2DB00C2E24F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		571CE6972821C4BA00C2E24F /* TinyToyTank.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = TinyToyTank.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		571CE6832821C2DA00C2E24F /* TankyBoy */ = {
 			isa = PBXGroup;
 			children = (
+				571CE6972821C4BA00C2E24F /* TinyToyTank.rcproject */,
 				571CE6842821C2DA00C2E24F /* AppDelegate.swift */,
 				571CE6862821C2DA00C2E24F /* ViewController.swift */,
 				571CE6882821C2DA00C2E24F /* Experience.rcproject */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				571CE6872821C2DA00C2E24F /* ViewController.swift in Sources */,
+				571CE6982821C4BA00C2E24F /* TinyToyTank.rcproject in Sources */,
 				571CE6852821C2DA00C2E24F /* AppDelegate.swift in Sources */,
 				571CE6892821C2DA00C2E24F /* Experience.rcproject in Sources */,
 			);
@@ -287,7 +291,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MY8XJ3F9R5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "AR experience requires access to Camera";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MY8XJ3F9R5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "AR experience requires access to Camera";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
